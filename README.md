@@ -1,6 +1,16 @@
 # 06FormulariosApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+[Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.  Bootstrap 5
+
+Este es un breve listado de los temas fundamentales de este poyecto:
+    Template driven
+    ViewChild
+    Two way databinding
+    Formularios dinámicos
+    Checks, radios y switches
+    Directivas personalizadas - Nota: este tema se cubre a profundidad después en una sección especializada
+    Manejo del formulario y validaciones
+    Encapsular módulos y scope de los mismos
 
 ## Development server
 
