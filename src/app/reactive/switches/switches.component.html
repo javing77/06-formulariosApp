@@ -1,1 +1,95 @@
-<p>switches works!</p>
+<h2>Reactivos : Switches</h2>
+<hr />
+
+<form [formGroup]="miFormulario" (ngSubmit)="guardar()" >
+  <div class="row mb-3">
+    <label class="col-sm-3 col-form-label"> Genero </label>
+    <div class="col-sm-9">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          value="M"
+
+          formControlName="genero"
+          id="radioMasculino"
+        />
+        <label class="form-check-label" for="flexRadioDefault1">
+          Masculino
+        </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          value="F"
+          formControlName="genero"
+
+          id="radioFemenino"
+        />
+        <label class="form-check-label" for="flexRadioDefault2">
+          Femenino
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <label class="col-sm-3 col-form-label"> Notificaciones </label>
+    <div class="col-sm-9">
+      <div class="form-check form-switch mt-2">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          role="switch"
+          id="flexSwitchCheckChecked"
+          formControlName="notificaciones"
+
+        />
+        <label class="form-check-label" for="flexSwitchCheckChecked"
+          >Deseo recibir notificaciones</label
+        >
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <label class="col-sm-3 col-form-label"> </label>
+    <div class="col-sm-9">
+      <div class="form-check">
+        <input class="form-check-input"
+                type="checkbox"
+                formControlName="condiciones"
+                id="flexCheckDefault" />
+        <label class="form-check-label" for="flexCheckDefault">
+          Terminos y condiciones
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-primary float-end"
+              type="submit">Guardar</button>
+    </div>
+  </div>
+</form>
+
+
+<h5>Valor Formulario</h5>
+<pre> {{miFormulario.value | json }} </pre>
+<br>
+
+<h5>Valor Valido</h5>
+<pre> {{miFormulario.valid  }} </pre>
+<br>
+
+<h5>Valor persona</h5>
+<pre> {{persona | json }} </pre>
+<br>
+<!--
+<h5>Valor Condiciones</h5>
+<pre> {{miFormulario.valid  }} </pre>
+<br> -->
+
