@@ -22,9 +22,21 @@ Este es un breve listado de los temas fundamentales de este poyecto
     FormGroup
     FormArray
 
+### Fase 3:
+    Validaciones manuales
+    Validaciones asíncronas
+    Validar contra expresiones regulares
+    Separar la lógica de validaciones
+    Estado del formulario
+    Mensajes de error personalizados
+
 ## Notas:
 
 ### Implementar un formulario reactivo importar
 `import { ReactiveFormsModule } from '@angular/forms';`
 `imports: [ReactiveFormsModule]`
 
+
+### Se trabaja con un json para simular una base dedatos 
+Este archivo se encuentra en Db Db\db.json para levantar
+`json-server --watch db.json`
